@@ -65,3 +65,7 @@ class TestHalve:
     def test_halve_float(self):
         '''halves float input'''
         assert(halve(99.0) == 49.5)
+
+    def test_halve_non_number(self):
+        '''returns None for non-number input'''
+        assert(halve("two") is None)
